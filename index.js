@@ -1,9 +1,16 @@
-// dengan package moment.js
-const convertTanggal = require("./convertTanggal");
+const {createInterface} = require("node:readline");
 
-console.log(convertTanggal("24-04-2015"));
+const rl = createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
 
-// Manual
-const convertTanggalManual = require("./convertTanggalManual");
-
-console.log(convertTanggalManual("24-04-2015"));
+rl.question("Masukkan tanggal (DD-MM-YYYY): ", (inputTanggal) => {
+  const convertTanggalManual = require("./convertTanggalManual");
+  const convertTanggal = require("./convertTanggal");
+  const hasilMoment = convertTanggal(inputTanggal);
+  const hasilManual = convertTanggalManual(inputTanggal);
+  console.log("Hasil dengan Moment:", hasilMoment);
+  console.log("Hasil Manual:", hasilManual);
+  rl.close();
+});
