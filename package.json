@@ -1,0 +1,20 @@
+{
+  "name": "convert tanggal",
+  "version": "1.0.0",
+  "description": "sebuah program untuk mengubah tanggal dari format DD-MM-YYYY menjadi format lain menggunakan Node.js",
+  "keywords": [
+    "basic",
+    "cli"
+  ],
+  "license": "MIT",
+  "author": "kdev",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "moment": "^2.31.0"
+  }
+}
