@@ -10,7 +10,7 @@ const rl = createInterface({
 rl.question(`Masukkan tanggal (DD-MM-YYYY): `, (inputTanggal) => {
   const hasilMoment = convertTanggal(inputTanggal);
   const hasilManual = convertTanggalManual(inputTanggal);
-  console.log(`Hasil dengan Moment:`, hasilMoment);
-  console.log(`Hasil Manual:`, hasilManual);
+  console.log(`Hasil dengan Moment: ${hasilMoment}`);
+  console.log(`Hasil Manual: ${hasilManual}`);
   rl.close();
 });

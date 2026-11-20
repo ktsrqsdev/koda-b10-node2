@@ -1,5 +1,5 @@
 {
-  "name": "convert tanggal",
+  "name": "convert-tanggal",
   "version": "1.0.0",
   "description": "sebuah program untuk mengubah tanggal dari format DD-MM-YYYY menjadi format lain menggunakan Node.js",
   "keywords": [
@@ -24,5 +24,13 @@
     "@stylistic/eslint-plugin": "^5.10.0",
     "eslint": "^10.13.0",
     "globals": "^17.13.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ktsrqsdev/koda-b10-node2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ktsrqsdev/koda-b10-node2/issues"
+  },
+  "homepage": "https://github.com/ktsrqsdev/koda-b10-node2#readme"
 }
